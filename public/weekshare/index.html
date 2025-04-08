@@ -116,5 +116,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll('a[href]');
+
+            links.forEach(link => {
+                link.addEventListener("click", event => {
+                    const url = link.getAttribute("href");
+
+                    if (url.startsWith("http") || url.startsWith("mailto:") || url.startsWith("#")) return;
+
+                    event.preventDefault();
+                    const cleanURL = url.split("?")[0];
+                    const withCache = `${cleanURL}?v=${Date.now()}`;
+                    window.location.href = withCache;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
