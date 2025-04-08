@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cities albums´</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New';
+            margin: 0;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .conteudo {
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .tables-container {
+            display: table;
+            width: 100%;
+        }
+
+        table {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .list_art {
+            width: 160px;
+            text-align: center;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .list_art img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border: 3px double white;
+        }
+
+        .trindade {
+            margin-bottom: 20px;
+        }
+
+        .main_entry {
+            width: calc(100% - 160px);
+            padding: 1em;
+            word-break: break-word;
+        }
+
+        .trodd, .treven {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .trodd {
+            background: #111;
+        }
+        .treven {
+            background: #1d1d1d;
+        }
+
+        .description {
+            font-size: 10px;
+            margin-top: 2px;
+            line-height: 1.2;
+        }
+
+        .description span:hover {
+            background-color: salmon !important;
+            color: white;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 1), 
+            rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+        }
+
+        iframe {
+            border: 3px double white;
+        }
+
+        .aspas {
+            font-family: 'Gothic MS';
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        p a {
+            text-decoration: none;
+            color: white;
+            background-color: aquamarine;
+        }
+
+        p a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .trodd, .treven {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .rel_date {
+            color: grey;
+            font-size: 14px;
+            padding-left: 2px;
+            margin-left: 2px;
+        }
+
+        .list_art {
+            width: 160px;
+            text-align: center;
+            margin-bottom: 20px;
+            overflow: hidden;
+            padding: 6px 10px 14px 6px;
+        }
+
+        .list_art img {
+            width: 100%;
+            height: auto;
+            object-fit: contain; 
+            border: 3px double white;
+            display: block; 
+            margin: 0 auto; 
+        }
+
+        .list_artist {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .album_info {
+            display: inline-block;
+        }
+
+        .main_entry {
+            padding: 1em;
+            word-break: break-word;
+        }
+
+        .main_entry .credited_name, a.list_album {
+            color: lightsalmon;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a.list_artist {
+            color: salmon;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .entry_info {
+            margin-bottom: 5px;
+        }
+
+        .album_desc {
+            display: block;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        <font face="MS Gothic">
+        <font size="2">
+
+            <div class="title">cities albums´</div>
+            <hr>
+    
+            <div class="description">
+                <span style="background: #1d1d1d; font-size: 12px; 
+                margin-left: 2px; padding-left: 6px;" >
+                    a trindade´
+                </span>
+            </div>
+
+        <div class="tables-container">
+            <table class="trindade">
+                <!-- (Burial - Untrue´) -->
+                <tr class="trodd">
+                    <td class="list_art">
+                        <a href="//rateyourmusic.com/release/album/burial/untrue/">
+                            <img src="//e.snmc.io/i/fullres/w/4584c1bbed61234bd3232c0cfe56bc80/5801416">
+                        </a>
+                    </td>
+                    <td class="main_entry">
+                        <div class="entry_info">
+                            <span class="credited_name">
+                                <a href="//rateyourmusic.com/artist/burial-3" class="list_artist">Burial</a>
+                            </span>
+                            <span class="album_info">
+                                <a href="//rateyourmusic.com/release/album/burial/untrue/" class="list_album">Untrue</a>
+                                <span class="rel_date">(2007)</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <!-- (Julia Holter - Loud City Song´) -->
+                <tr class="treven">
+                    <td class="list_art">
+                        <a href="//rateyourmusic.com/release/album/julia-holter/loud-city-song/">
+                            <img src="//e.snmc.io/i/fullres/w/86780744cbf77037e721db024538204a/4915894">
+                        </a>
+                    </td>
+                    <td class="main_entry">
+                        <div class="entry_info">
+                            <span class="credited_name">
+                                <a href="//rateyourmusic.com/artist/julia-holter" class="list_artist">Julia Holter</a>
+                            </span>
+                            <span class="album_info">
+                                <a href="//rateyourmusic.com/release/album/julia-holter/loud-city-song/" class="list_album">Loud City Song</a>
+                                <span class="rel_date">(2013)</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- (Tim Hecker - Mirages´) -->
+                <tr class="trodd">
+                    <td class="list_art">
+                        <a href="//rateyourmusic.com/release/album/tim-hecker/mirages/">
+                            <img src="//e.snmc.io/i/fullres/w/e71b72d4fc38dfa27735ec955d92f153/1992603">
+                        </a>
+                    </td>
+                    <td class="main_entry">
+                        <div class="entry_info">
+                            <span class="credited_name">
+                                <a href="//rateyourmusic.com/artist/tim-hecker" class="list_artist">Tim Hecker</a>
+                            </span>
+                            <span class="album_info">
+                                <a href="//rateyourmusic.com/release/album/tim-hecker/mirages/" class="list_album">Mirages</a>
+                                <span class="rel_date">(2004)</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="description">
+                <span style="background: #1d1d1d; font-size: 12px; 
+                margin-left: 2px; padding-left: 6px;">
+                    outros´
+                </span>
+            </div>
+
+            <table>
+                <!-- (新しい日の誕生 [Birth of a New Day] - 2814) -->
+                <tr class="treven">
+                    <td class="list_art">
+                        <a href="//rateyourmusic.com/release/album/2814/">
+                            <img src="//e.snmc.io/i/fullres/w/8a16dd57bba2e8529d34c1ca4c8f7c60/10087023">
+                        </a>
+                    </td>
+                    <td class="main_entry">
+                        <div class="entry_info">
+                            <span class="credited_name">
+                                <a href="//rateyourmusic.com/artist/2814" class="list_artist">2814</a>
+                            </span>
+                            <span class="album_info">
+                                <a href="//rateyourmusic.com/release/album/2814/" class="list_album">
+                                    <span style="font-family: 'MSゴシック'; font-size: 12px;">新しい日の誕生</span> (Birth of a New Day)
+                                </a>
+                                <span class="rel_date">(2015)</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- (Ruim - Subserviente´) -->
+                <tr class="treven">
+                    <td class="list_art">
+                        <a href="//rateyourmusic.com/release/album/subserviente/ruim/">
+                            <img src="//e.snmc.io/i/fullres/w/9bb4d9ce9493d56c1ac692534333bfc4/12879754">
+                        </a>
+                    </td>
+                    <td class="main_entry">
+                        <div class="entry_info">
+                            <span class="credited_name">
+                                <a href="//rateyourmusic.com/artist/subserviente" class="list_artist">Subserviente</a>
+                            </span>
+                            <span class="album_info">
+                                <a href="//rateyourmusic.com/release/album/subserviente/ruim/" class="list_album">
+                                    <span>Ruim</span>
+                                </a>
+                                <span class="rel_date">(2025)</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- (Ruim - Subserviente´) -->
+                <tr class="treven">
+                    <td class="list_art">
+                        <a href="//rateyourmusic.com/release/album/tristeza-nao-tem-fim/tristeza-nao-tem-fim/">
+                            <img src="//e.snmc.io/i/fullres/w/e9edec7603b6d07e10e8f10f91bcde26/9876677">
+                        </a>
+                    </td>
+                    <td class="main_entry">
+                        <div class="entry_info">
+                            <span class="credited_name">
+                                <a href="//rateyourmusic.com/artist/tristeza-nao-tem-fim" class="list_artist">Tristeza Não Tem Fim</a>
+                            </span>
+                            <span class="album_info">
+                                <a href="//rateyourmusic.com/release/album/tristeza-nao-tem-fim/tristeza-nao-tem-fim/" class="list_album">
+                                    <span>Tristeza Não Tem Fim</span>
+                                </a>
+                                <span class="rel_date">(2022)</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

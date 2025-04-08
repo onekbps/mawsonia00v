@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guia experimental´</title>
+    <script type="module" src="/b-log/00w004p/fish-pp/fish-pp.js" defer></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            /*font-family: 'Courier New';*/
+            margin: 0;
+            padding: 20px;
+            
+            /* start page with zoom-in */
+            -ms-zoom: 125%;
+            zoom: 125%;
+            
+            /*remove smooth style of fonts*/
+            image-rendering: pixelated;
+            -webkit-font-smoothing: none;
+            -moz-osx-font-smoothing: grayscale;
+            font-smooth: never;
+        }
+
+        .title {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .conteudo {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .topic {
+            font-size: 12px;
+            text-decoration: none;
+            color: white;
+            background: rgb(63, 168, 110);
+        }
+        .topic-2 {
+            font-size: 12px;
+            text-decoration: none;
+            color: white;
+            background: rgb(112, 139, 61);
+        }
+        .topic:hover,
+        .topic-2:hover {
+            background: white;
+            color: black;
+        }
+
+        .aspas {
+            font-family: 'Gothic MS';
+            font-size: 14px;
+            font-style: italic;
+        }
+        .uppercase {
+            font-family: monospace;
+            font-size: 11px;
+            font-weight: bolder;
+        }
+        .supnote {
+            font-size: 12px;
+            font-style: italic;
+            color: #ccc;
+        }
+        
+        blockquote.major {
+            font-weight: bolder;
+            font-style: oblique;
+            border-left: 4px solid white;
+            font-family: 'MS Gothic';
+            font-size: 14px;
+            margin: 1em 0;
+            padding: 0.5em 1em;
+            color:  white;
+        }
+        blockquote.minor {
+            font-weight: bolder;
+            font-style: oblique;
+            border-left: 4px solid white;
+            font-family: 'MS Gothic';
+            font-size: 12px;
+            margin: 1.5em 0;
+            padding: .3em .3em;
+            color:  white;
+        }
+
+        img {
+            max-width: 80%;
+            border: 3px double white;
+        }
+
+        img:hover {
+            max-width:81%;
+        }
+
+
+        .subtitled {
+            display: inline-block;
+            text-align: left;
+            max-width: 80%;
+        }
+
+        .subtitled img {
+            display: block;
+            width: 100%;
+            border: 3px double white;
+        }
+
+        .subtitled .description {
+            font-size: 10px;
+            margin-top: 2px;
+            line-height: 1.2;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 1), 
+            rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+        }
+
+        p a {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(61, 129, 84);
+        }
+        .auda a {
+            text-decoration: none;
+            color: white;
+            background-color: seagreen;
+        }
+
+        p a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .description {
+            font-size: 10px;
+            margin-top: 2px;
+            line-height: 1.2;
+        }
+
+        /* ａｕｄｉｏ－ｐｌａｙｅｒ 
+        */
+
+    </style>
+</head>
+<body>
+    <div class="title">
+        <font face="MS Gothic">guia experimental´</font>
+    </div>
+
+    <div class="conteudo">
+        <font face="MS Gothic">
+        <font size="2">
+
+        <p>Como forma de agradecimento e em razão da minha <i>'aposentadoria precoce da música experimental'</i>. Resolvi escrever um pequeno guia sobre como criar música verdadeiramente experimental — sem depender de padrões; convenções; habilidades técnicas; talento; teoria ou qualquer outra coisa que muitos consideram indispensável para fazer arte. Pensando nas pessoas que têm o menor dos contatos possíveis com arte, mas estão à procura de um hobbie novo por aí, ou acham que tem algo a dizer sei lá. Nos meus quase dez anos fazendo só essa forma de música, eu aprendi uma das coisas mais importantes e definitivas sobre ela: <b>para se fazer música experimental <i>(ou não)</i> você só precisa de coragem, e bem, de ir lá e fazer mesmo. Em outras palavras, experimentar´</b></p>
+
+        <img src="/b-log/00w004p/img/run.gif" alt="running ppl">
+
+        <p><b>Uma das minhas lições mais valiosas — e solitárias — foi a de que tudo o que eu achava que precisava, na verdade, só me atrapalhava.</b> É claro (e óbvio) que, se você deseja fazer algumas coisas específicas, precisará usar ferramentas específicas. Isso envolverá utilizar recursos que não são essenciais para se fazer arte, mas que, se você julgar necessários no momento, quanto mais souber, melhor — né? <br>
+
+        Meu intuito aqui é apenas orientar brevemente pessoas que acreditam ter algo a dizer e expressar, ajudando-as a trilhar seus próprios caminhos com sua arte. Muitas delas, acredito, devem ter pouco — ou algum mínimo — contato com algo que ajudará muito nesse processo: seja ouvir música experimental e ter uma "noção", seja tocar um instrumento, ter uma criatividade incomum ou ideias mirabolantes. Como eu disse antes, nada disso é essencial, mas, se você tem, ajudará muito.</p>
+
+        <p><b><i>´</i></b> Inicialmente, o foco desse guia era apenas reunir uma grande quantidade de informação, sites e softwares extremamente fáceis de usar, com o foco nas pessoas que por alguma razão terão dificuldades em fazer o caminho tradicional de baixar algum software famoso aí <b><i>(daw´)</i></b> e ter que aprender essa desgraça do zero¹. (O que todos sabem, é muito complicado). No fim, eu achei que poderia ser mais completo, ensinar pequenas <i>'técnicas'</i> e fazer o povo enxergar por outras óticas; porque de um modo mais abstrato, se forçar a ver por outras perspectivas é o que vai te fazer criar <span class="uppercase"><b>A SUA</b></span> própria técnica. Você não precisa do que acha que precisa;</p> 
+        
+        <p>esse guia estará em dois tópicos. O primeiro de <b>guia de ferramentas</b>. E o segundo, <b>apresentando técnicas</b>. ou tentando.</p>
+
+        <p class="supnote">(1—) Se você é muito jovem, o que eu recomendaria independende do que fosse, de qual software, qual técnica sei lá. eu recomendaria que você tentasse aprender as coisas. a juventude é um momento em que nós aprendemos as coisas com mais facilidade; nós absorvemos mais coisas com facilidade. É claro que se você é mais velho você pode fazer a mesma coisa, mas depois de tanto ouvir gente mais velha dizer que não tem tempo não-sei-o-que, eu percebi que isso é mesmo mais comum e talvez não há muito o que fazer. Então meu conselho para os jovens aí é que você não deve esperar para aprender as coisas que você pode aprender agora. Quando eu era adolescente e por ter muito tempo livre eu queria aprender todas as técnicas do mundo. é claro que você cresce e descobre o que faz diferença ou não. Mas eu <span class="uppercase">NÃO</span> serei hipócrita de dizer que isso não faz uma diferença gigantesca no meu trabalho. Saber tocar instrumentos, saber um pouquinho aqui e ali de teoria, saber usar um programa que parece um ciborgue e vai te engolir, saber digitar códigos. Se você é jovem, muito jovem, provavelmente você tem muito tempo de sobra. Desenvolva seu tempo aprendendo e acima de tudo, se divirta fazendo as coisas, não insista no que você sabe que está só te causando dor de cabeça, procure sempre o caminho mais divertido ao invés disso.  O tempo vai passar e claro, a diferença que vai fazer é, você vai ter percorrido mais caminho. Pode ajudar muito no lugar onde você quer chegar; mas antes disso você precisa percorrer. Então aprenda e estude!! ´</p>
+
+        <img src="/b-log/00w004p/img/div4 (1).jpg" alt="div">
+        <hr>
+
+        <blockquote class="major">As ferramentas:</blockquote>
+        <p>Antes de ir definitivamente para as ferramentas e listá0-las <i>(eu sei eu estou enrolando, mas é necessário´)</i>, vamos entrar em pequenos conceitos para explicar melhor as coisas.</p>
+
+        <span>Do que é feita a música???</span>
+        <p>Eu sei, você deve ter pensado nas mais diferentes respostas, mas a resposta correta aqui é a mais lógica possível: <cite>som</cite>. Mais especificamente, fontes de áudio. A música é feita de <cite><b>fontes de áudio</b></cite>. <br>
+        Então, provavelmente, a única ferramenta necessária para se fazer música do jeito moderno é alguma que consiga, de alguma forma, <b>capturar e armazenar</b> áudio. Como o nosso foco é em música mais moderna, eu apresentarei apenas ferramentas digitais. Mas fica aqui registrado que <b><i>qualquer gravador</i></b> já é uma ferramenta que você pode ter — e será o seu ponto de partida.</p> <br>
+
+        <blockquote class="minor">Capturar e armazenar áudio:</blockquote>
+        <p>ferramentas digitais que são capazes de gravar e armazenar fontes de audio em seu computador, para serem manipuladas posteriormente:</p>
+
+        
+        <a href="//www.audacityteam.org/download/" target="_blank">
+            <img src="/b-log/00w004p/img/audacity.png" alt="audacity-daw">
+        </a>
+        <br>
+        <a class="topic" href="//www.audacityteam.org/download/" target="_blank">
+                        <i><b>audacity´</b></i></a>
+
+        <p>o audacity é um software muito famoso que você talvez tenha até ouvido falar. se não, eu só gostaria de dizer que a grande imensa maioria dos artistas experimentais que eu conheço, usa essa ferramenta. <b><i>você vai ficar de fora??</i></b> <br>
+
+        brincadeiras à parte. O audacity tem tudo o que você precisa para começar no essencial. ele grava audio (de uma maneira muito prática), captura fontes digitais e faz o básico na manipulação como cortar, esticar, separar e unir fontes de áudio e de quebra ainda tem vários efeitos além da possibilidade de usar fontes externas deles. Mas nós focaremos apenas no mais óbvio e simples que ele pode fazer: <i><b>Gravar e armazenar áudio</b></i>. Diferente da grande maioria dos softwares (daws´) ele não faz parte desse lugar, não tem uma interface complicada. No primeiro contato você já aprende como configurar o necessário para gravar suas fontes de áudio. Desde fontes de áudio externas, como internas (samples, gravações de computador, audio digital).
+
+        eu levei muito tempo para descobrir o audacity por uma questão de ser apresentada a outros softwares antes, mas faz um bom tempo que eu usava ele regularmente, principalmente pelas funcionalidades mais úteis para mim, que obviamente são as mais básicas e simples. </p>
+
+        <p><b><i>Tudo o que você precisa saber por agora é isso:</i></b></p>
+
+        <p class="auda"><a href="//youtu.be/3hNx8_hM9kU" target="_blank">
+            <i><b>"Como configurar a captura de áudio interna. (Áudio do PC´)"</b></i></a>
+        </p>
+        <p class="auda"><a href="//youtu.be/tjaOPWvUK1Q" target="_blank">
+            <i><b>"Como configurar a captura de áudio externa. Fontes externas e latência"</b></i></a>
+        </p>
+        <p class="auda"><a href="//youtu.be/2oLkUuADasA" target="_blank">
+            <i><b>"Como manipular áudio e criar novas 'fontes' de áudio (exportar´)"</b></i></a>
+        </p>
+        <br>
+
+        <a href="//chromewebstore.google.com/detail/sample/kpkcennohgffjdgaelocingbmkjnpjgc" target="_blank">
+            <img src="/b-log/00w004p/img/sample.jpg" alt="sample-ext">
+        </a>
+        <br>
+        <a class="topic" href="//chromewebstore.google.com/detail/sample/kpkcennohgffjdgaelocingbmkjnpjgc" target="_blank">
+                        <i><b>sample´</b></i></a>
+
+        <p>sample é uma extensão do google chrome <i><b>(não faço ideia se tem em outros browsers, mas você pode procurar similares)</b></i>, que chega até ser cômico de tão simples que é. basta baixar e rodar normalmente clicando nela. ela têm um botão gigante de pressionar para gravar, você consegue gravar qualquer fonte de áudio diretamente do seu navegador e depois só clicar na extensão de novo e você tem um botão para parar o áudio e salvar.</p>
+        
+
+        <img src="/b-log/00w004p/img/div6.jpg" alt="analogicos">
+        <br>
+        <a class="topic">          <i><b>analógicos gerais´</b></i></a>
+
+        <p>Qualquer gravador ou coisa assim que você consiga transferir para o digital. Seu celular por exemplo, o gravador dele ou outros gravadores que você pode baixar por ai na loja de apps. Isso é uma ferramenta que não importa como você vai fazer suas músicas aí, entendendo o que é <span class="uppercase">SOM</span>, você vai precisar dele para capturar algumas coisas. porque nossa jornada será assim, no começo <i><b>quanto mais coisa você gravar e juntar melhor</b></i>. os analógicos servirão pra isso. <b><i>grave as coisas´</i></b></p> <br>
+
+        <blockquote class="minor">Criar fontes novas de áudio:</blockquote>
+        <p>ainda sobre criar novas fontes <b><i>(arquivos´)</i></b> de áudio.  aqui vai umas recomendações dos melhores sites que eu conheço por aí na internet, todos gratuitos e muito simples de se utilizar, basta abrir no seu navegador e pronto. Eles têm a função básica de criar som de uma maneira mais tradicional como a gente conhece <i>— no caso —</i> <i><b>por instrumento</b></i>. A maioria são sintezadores, coisa que está na moda, coisa que é sem limites e você pode criar literalmente tudo o que você quiser. Caso você esteja procurando pelos instrumentos mais antigos e tradicionais, falaremos mais para frente de como você pode conseguir esses sons, sem nem ter nenhum desses instrumentos ou saber tocar.</p>
+
+        <p><b><i>Ritmos:</i></b></p>
+        <a href="//patternsketch.com/" target="_blank">
+            <img src="/b-log/00w004p/img/patternsketch.png" alt="pattern_sketch">
+        </a>
+        <br>
+        <a class="topic" href="//patternsketch.com/" target="_blank">            
+            <i><b>PatternSketch´</b></i></a>
+
+        <p>o pattern sketch é um site muito simples de utilizar. é uma espécie de simulação daqueles equipamentos de criar baterias prontas muito usados nos anos <i><b>70´ aos 2000´</b></i>. se você nunca viu um desses não se assuste, basta <i><b>dar play</b></i> e ir apertando os botões e selecionando presets e você verá os ritmos sendo feitos. Uma coisa que eu adoro desses tipos de <i>drummachines</i> é que eles têm um charme muito característico hoje em dia, ou seja, usar isso é conseguir umas texturas muito específicas de gente que faz <i><b>música caseira</b></i>. experimente. vá <b><i>clicando em tudo que der</i></b>. foi assim que nós começamos e isso sempre trás os resultados mais divertidos possíveis.</p>
+
+        <a href="//roland50.studio/" target="_blank">
+            <img src="/b-log/00w004p/img/roland.png" alt="rolandw">
+        </a>
+        <br>
+        <a class="topic" href="//roland50.studio/" target="_blank">
+                        <i><b>Roland50Studio´</b></i></a>
+
+        <p>esse é tipo a versão <i>'original'</i> dessas <b><i>máquinas baterias</i></b>. as versões analógicas geralmente eram dessa marca muito famosa, a Roland. é de lá que vem aquela famosa <i>bateria</i> <span class="uppercase"><b>808</b></span>. então você pode testar ela, e o som eu garanto que é <i>'literalmente'</i> igual porque vieram capturados do instrumento analógico original também. Nesse site tem a <span class="uppercase"><b>303</b></span> que é de linhas de baixo, muito usadas na música eletrônica dos anos noventa, e tem outras coisas interessantes também. de modo prático, quase tudo no site é clicável, então <i><b>clique nas coisas</b></i> e experimente. Tanto esse quanto o <i>patternsketch</i>  tem <b><i>funcionalidade de gravação</i></b>, mas você também já pode começar a testar as funcionalidades de <i>gravação do <b>audacity´</b></i> e gravar por lá. algo que eu considero fundamental, mas falaremos isso mais para frente.</p>
+
+        <a href="//acidmachine2.s3-website-eu-west-1.amazonaws.com/" target="_blank">
+            <img src="/b-log/00w004p/img/acid_machine.png" alt="acid_machine">
+        </a>
+        <br>
+        <a class="topic" href="//acidmachine2.s3-website-eu-west-1.amazonaws.com/" target="_blank">
+                        <i><b>AcidMachine´</b></i></a>
+
+        <p>outra máquina pra fazer som de ritmo. essa é classica, muito usada no <i>'gênero'</i> <b><i>Acid</i></b> de música eletrônica. Basicamente funciona da mesma forma que as outras, então você só deve <b><i>ficar apertando nas coisas</i></b> e <b><i>experimentando</i></b> os ritmos.</p>
+        <br>
+
+        <p><b><i>Fontes de Som Gerais:</i></b></p>
+        <a href="//www.beepbox.co/" target="_blank">
+            <img src="/b-log/00w004p/img/beepbox.png" alt="BeepBox´">
+        </a>
+        <br>
+        <a class="topic-2" href="//www.beepbox.co/" target="_blank">
+                        <i><b>BeepBox´</b></i></a>
+
+        <p>o beepbox é uma das minhas coisas favoritas que eu descobri nos últimos anos. eu ja fiz um álbum inteiro nele e nunca publiquei por falta de tempo. aqui vai uma <b><i>demo:</i></b> <br>
+
+        <fish-pp src="https://files.catbox.moe/zw8j4u.mp3" width="81%"></fish-pp>
+
+        <p>ele é basicamente um criador de música eletrônica <i>minimalista</i>. todos os sons dele são padrãozinhos e simples e ele tem funcionalidade de ritmo e dá pra criar coisas em tonalidades simples e bem bonitas melodicamente. A essa altura, eu preciso dizer que existem <b><i>duas´</i></b> formas de usar ele. a mais simples, e uma <b><i>complexa.</i></b></p>
+        <p>caso você queria aprender da maneira complexa, você precisará ter uma <i><b>pequena noção de ritmo e afinação</b></i>. o que te leva para um pouco de <i><b>teoria musical</b></i>. mas não se preocupe, não é nada que seja um bicho de sete cabeças de verdade. Mais <b><i>adiante</i></b>, eu deixei um <i><b>pequeno guia de introdução ao ritmo e afinação</b></i>, orientados à música eletrônica que vão te ensinar exatamente como usar e se adaptar a essa linguagem que <i>aparece muito nos softwares</i> de fazer música. Apesar de que o <i>beepbox</i> em si, você não precisa se preocupar com afinação e ritmos complexos. Mas bem, a minha <b><i>recomendação</i></b> mesmo, é que você use isso de <b><i>maneira completamente alienada e inconsequente</i></b>. foi como eu me obriguei a usar para criar um album inteiro usando somente esse software e eu acredito que de longe, é a maneira <i>mais divertida de se usar</i>. em outras palavras, vá <b><i>apertando todos os botões dele o quanto você puder</i></b>. tente quebrar esse troço.</p>
+
+        <p class="supnote">o beepbox até onde eu sei não tem função de gravação embutida, pelo menos nunca achei. então eu usei o próprio <b><i>audacity´</i></b> quando precisei gravar as coisas. uma pequena dica jogada aos ventos aqui, quando se faz <b>música improvisada experimental</b>, é muito <i><b>recomendado que você sempre ligue seu gravador antes de começar</b></i>.</p>
+
+
+        <a href="//synth.playtronica.com/" target="_blank">
+            <img src="/b-log/00w004p/img/websin.png" alt="websin">
+        </a>
+        <br>
+        <a class="topic-2" href="//synth.playtronica.com/" target="_blank">
+                        <i><b>Web Synths´</b></i></a>
+
+        <p>esse site é tão bom e inacreditável que até <i>parece não existir</i>. ele tem um <b><i>acervo grande até de sintetizadores experimentais</i></b> e algumas emulações de sintetizadores famosos. é completamente prático e simples de usar. você <b><i>escolhe um. abre. carrega e começa a tocar com seu teclado</i> (de computador mesmo´)</b> as notas nele.</p>
+
+        <p>geralmente, na maioria dos sintetizadores as notas <b>do-re-mi-fa-sol-la-si-do</b> irão começar na letra <b>(z´)</b>. se não, na letra <b>(a´)</b> e seguirão a ordem da esquerda pra direita. seguindo o padrão de <b><i>midi´</i></b> keyboard tradicional. <b><i>mas quem se importa com isso né??</i></b> né?? <b><i>né??</i></b>apenas <b><i>pressione as teclas do seu teclado freneticamente</i></b>. você já estará experimentando.  <i>todos´</i> os sintetizadores nesse site, podem ser controlados usando o teclado. </p> <br>
+
+        <p><i><b>de todos esses mini sintetizadores os meus favoritos são:</b></i></p>
+
+        <a class="topic-2" href="//synth.playtronica.com/elements/" target="_blank">            <i><b>Elements:</b></i></a>
+        <p>provavelmente o melhor daqui. é uma maquina de sintetizadores que é ajustada por tonalidades então você nao precisa se preocupar com teorial musical, apenas toque as coisas, tente mudar os tons e as escalas e veja isso sempre dar certo.</p>
+        <a href="//synth.playtronica.com/elements/" target="_blank">
+            <img src="/b-log/00w004p/img/elements.png" alt="Elements´">
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/soundfont/" target="_blank">            <i><b>Soundfont Sampler:</b></i></a>
+        <p>os sons que são usados geralmente em softwares analógicos antigos. os maiores exemplos são os de instrumentos usados para trilhas sonoras de jogos super antigos tipo. 
+            <i><b>snes ou   gameboy</b></i>.</p>
+        <a href="//synth.playtronica.com/soundfont/" target="_blank">
+            <img src="/b-log/00w004p/img/soundfont.png" alt="Soundfont´">
+
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/midi-city/" target="_blank">            <i><b>MIDI.city:</b></i></a>
+        <p>grande quantidade de instrumentos <i>midi´</i> simulando instrumentos reais. se você souber usar, esses sons todos têm um charme muito específico. na parte de cima dele tem as configurações de ritmo e na debaixo o resto dos instrumentos. se não me engano, esse também já é ajustado para <b><i> escalas específicas</i></b>, então basta tocar que as coisas harmonicamente irão funcionar sem que você precise se preocupar com isso.</p>
+        <a href="//synth.playtronica.com/midi-city/" target="_blank">
+            <img src="/b-log/00w004p/img/midicit.png" alt="MIDI´ City">
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/online-sequencer/" target="_blank">            <i><b>Online Sequencer:</b></i></a>
+        <p>você pode importar <a href="//archive.org/details/themagicofmidiv1" target="_blank"><b><i>midi´</i></b></a> para ele, o que é algo muito útil. e pode usar esse sistema tradicional de midi para criar seus <b><i>próprios arquivos midi</i></b> ou utilizar o som deles mesmo e só gravar o áudio. <b><i>eles vêm com um guia no site explicando melhor</i></b>.</p>
+        <a href="//synth.playtronica.com/online-sequencer/" target="_blank">
+            <img src="/b-log/00w004p/img/onlineseq.png" alt="Online´ Sequencer">
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/binary-synth/" target="_blank">            <i><b>Binary Synth:</b></i></a>
+        <p>esse você carrega um arquivo <b><i>(todo tipo de arquivo´)</i></b> e ele transforma em <b><i>binário</i></b>. quando você der play, ele vai gerar uma codificação baseada <i><b>nos zeros e (uns)</b></i> e que são criados a partir disso. o resultado é quase sempre um som meio estranho. bom pra quem faz <i>noise músic</i> haha´
+        você ainda pode mudar alguns parametros e ter sons ligeiramene diferentes. as possibilidades são infinitas.</p>
+        <a href="//synth.playtronica.com/binary-synth/" target="_blank">
+            <img src="/b-log/00w004p/img/binsin.png" alt="Binary Synths´">
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/sound-box/" target="_blank">            <i><b>Soundbox:</b></i></a>
+        <p>um tracker, dá pra tirar muita coisa disso mas <b><i>honestamente eu acho muito complicado usar isso de maneira correta</i></b>. mas basta você selecionar os espaços quadradinhos ai e ir tocando no seu teclado. qualquer coisa ele assim como todos os outros, têm um pequeno guia. ainda tem o <a href="//synth.playtronica.com/bassoon/" target="_blank"><b><i>(bassoon´)</i></b></a> que é um tracker também, mas eu não faço ideia de como utilizar os dois. estou apenas mencionando isso porque esses são os <i><b>tipos de software que o aphex twin</b></i> e outras pessoas fodonas ai usam haha´ então talvez você queira aprender.</p>
+        <a href="//synth.playtronica.com/sound-box/" target="_blank">
+            <img src="/b-log/00w004p/img/soundbox.png" alt="Soundbox´">
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/cardinal/" target="_blank">            <i><b>Cardinal:</b></i></a>
+        <p>embora sintetizadores modulares sejam hipercomplicados de se usar do jeito mais profundo, tem uma maneira de se usá-los <i><b>completamente inconsequente</b></i>, adicionando as coisas sem pensar. geralmente você consegue ótimos resultados de <i>ruidos bizarros</i>. <br> <b><i>(bom pros fãs de noise music´)</i></b>². caso essa distro do cardinal venha vazia, eu realmente recomendo ver algum tutorial básico de <b> como conectar os cabos</b> e sobre <b>roteamento</b>, depois disso você vai descobrir um mundo que provavelmente nunca vai largar pra sua música.</p>
+        <a href="//synth.playtronica.com/cardinal/" target="_blank">
+            <img src="/b-log/00w004p/img/cardinal.png" alt="Cardinal´">
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/omni/" target="_blank">            <i><b>Omni:</b></i></a>
+        <p>um sintetizador basedo em escalas incomuns que soam muito bonitas. no fim você só precisa tocar as coisas no seu  teclado e a <b><i>mágica será feita</i></b>.</p>
+        <a href="//synth.playtronica.com/omni/" target="_blank">
+            <img src="/b-log/00w004p/img/omni.png" alt="Omni´">
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/groove-pizza/" target="_blank">            <i><b>Groovepizza:</b></i></a>
+        <p>tem uma mecânica bizarra pra criar ritmos. vá mexendo e <b><i>girando as bolinhas</i></b> e <b><i>clicando nas coisas</i></b> e você quem sabe não se torna o novo moacir santos do <i>polirrítmo</i>. ou só alguém que faz <a href="//youtu.be/A1M7WPEg4js" target="_blank"><b><i>idm</i></b></a> mesmo.</p>
+        <a href="//synth.playtronica.com/groove-pizza/" target="_blank">
+            <img src="/b-log/00w004p/img/groovep.png" alt="Groovepizza´">
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/pixel-synth/" target="_blank">            <i><b>PixelSynth:</b></i></a>
+        <p>uma ferramenta bizarra que você geralmente vai conseguir extrair <i><b> apenas ruído</b></i> dali. pelo menos eu só consegui isso. tem uma mecânica legal de <b><i>desenhar</i></b> e modular o som. <b><i>(bom para os fazedores de noise´)</i></b>³</p>
+        <a href="//synth.playtronica.com/pixel-synth/" target="_blank">
+            <img src="/b-log/00w004p/img/pixelss.png" alt="PixelSynth´">
+        </a>
+        <br> <br> <br>
+
+        <a class="topic-2" href="//synth.playtronica.com/granular/" target="_blank">            <i><b>Multitouch Granular:</b></i></a>
+        <p>sampler granular. você carrega fontes de áudio e <b><i>clica nos espectros</i></b> de audio, ele meio que <i>'remixa'</i> baseado numa lógica de grãos. cara eu não sei explicar o que é isso. mas é o que <i><b>artistas como o Tim Hecker usam há anos</b></i> e é uma das <i>coisas mais lindas</i> já inventadas na sintese de som. eu recomendo demais você usar isso e tentar saber um pouco mais. apenas <b><i>experimente</i></b> ai pra ver.</p>
+        <a href="//synth.playtronica.com/granular/" target="_blank">
+            <img src="/b-log/00w004p/img/granular.png" alt="Multitouch´ Granular"> 
+        </a>
+        <br> <br> <br>
+
+
+        <p>enfim, eu recomendo testar <i><b>um por um</b></i> no fim das contas. vai que você encontra o seu favorito e que usará ai por toda vida, ou sei lá simplesmente vai usar ele na gravação das suas próximas três músicas e nunca mais. isso não importa. no fim você deve apenas manter em mente <i><b>de que você deve ir atrás das coisas</b></i> e de <b><i>usar as coisas sem pensar muito ou esperar muito</i></b>. experimente, experimente e experimente. encontre a <b><i>sua maneira de usar</i></b> e você estará criando o seu caminho para ter sua própria técnica.</p> <br>
+
+
+        <a href="//www.websynths.com/microtonal/" target="_blank">
+            <img src="/b-log/00w004p/img/microtonal.jpg" alt="microtonal">
+        </a>
+        <br>
+        <a class="topic-2" href="//www.websynths.com/microtonal/" target="_blank">
+                        <i><b>Websynths Microtonal´</b></i></a>
+
+        <p>seguindo a leva dos sintetizadores. esse site tem uma grande quantidade de <i><b>sons específicos</b></i> e a <b><i>maioria microtonais</i></b>. ou seja, sons mínimos, de afinações mínimas. isso é muito útil, mas a grande maioria já soa como algo de design muito descolado. você vai querer usar. Novamente, a lógica é a mesma, escolha um preset e toque no teclado.</p> <br>
+        
+
+        <blockquote class="minor">Roubar fontes de áudio existentes:</blockquote>
+        <p>em outras palavras, as famosas <b><i>samples</i></b>. eu vou deixar aqui brevemente, sem falar muito algumas ferramentas e sites para <i>achar e editar; manipular samples</i>.</p>
+
+        <img src="/b-log/00w004p/img/youtube.png" alt="Youtube´">
+        <br>
+        <a class="topic">            <i><b>Youtube e outras formas de mídia´</b></i></a>
+        <p>não precisa falar muito né. esse provavelmente vai ser o lugar de onde a maior parte das suas fontes de áudio <i>(se você decidir usar samples)</i>, virá. <b><i>literalmente todo e qualquer site que produza som</i></b>, você pode capturar facilmente usando o <i><b>audacity´</b></i> se estiver no seu computador. mais um  grande conselho aí, <i>procure capturar o que você acha que ninguém normalmente capturaria</i>. você só vai descobrir isso vivendo a sua vida de modo atento. seja nos filmes que você vê, na música que você ouve. essas coisas, para além do que é óbvio demais.</p>
+
+        <a href="//freesound.org" target="_blank">
+            <img src="/b-log/00w004p/img/freesound.png" alt="Freesound">
+        </a>
+        <br>
+        <a class="topic-2" href="//freesound.org/" target="_blank">            <i><b>Freesound´        </b></i></a>
+        <p>o site mais velho e mais usado do mundo, ainda é atual e diga-se de passagem, um <i><b>clássico</b></i>. o freesound é mais focado em <i><b>raw footage´</b></i>. você vai achar <i>field recording <b>(gravação de campo)</b></i> e essas coisas mais cotidianas. mas tem gente que bota som digital, instrumento gravado e afins por lá também. basta saber procurar.</p>
+
+        <a href="//splice.com/sounds" target="_blank">
+            <img src="/b-log/00w004p/img/splice.png" alt="Splice´">
+        </a>
+        <br>
+        <a class="topic" href="//splice.com/sounds" target="_blank">            <i><b>Splice´</b></i></a>
+        <p>esse aqui é o <b><i>único site pago</i></b> que eu estou indicando. mas é porque você consegue <b><i>usar a versão gratuita dele (se é que me entende haha´)</i></b>. Não deve ser muito difícil, agora que você aprendeu sobre como capturar fontes de áudio, <i>achar a maneira gratuita de utilizá-lo</i>. Antes que você pergunte <i>se isso pode dar algum problema menor, não</i>. fique tranquilo. A única coisa negativa é que esse site é extremamente famoso. <i><b>literalmente todo mundo usa as coisas daqui</b></i>. e ainda <i><b>usa de um jeito ruim</b></i> eu diria. então se você tem questões ai com soar original, definitivamente você <i>vai ter que encontrar seu caminho se quiser aproveitar isso aqui</i>. uma das formas que eu acho mais válidas é a de pegar as <i><b>gravações de instrumentos que você normalmente não poderia gravar</b></i>. esse é o momento onde eu falei que mencionaria sobre os instrumentos que você não pode ter. ao longo da internet tem <i><b>vários desses sites e pacotes de instrumentos por aí</b></i>, basta dar um google em <i>'splice similars'</i> ou <i>'[inserir instrumento] sound pack'</i> e você acha uma infinidade. o bom disso é que eles já vem limpos e na melhor gravação possível. o lado ruim claro, é que com certeza já usaram milhões de vezes. o que no fim nem é tão ruim assim. <i><b>é só ser criativo e vocês já sabem o resto.</b></i></p>
+
+        <a href="//samplette.io/" target="_blank">
+            <img src="/b-log/00w004p/img/samplette.png" alt="Samplette´">
+        </a>
+        <br>
+        <a class="topic-2" href="//samplette.io/" target="_blank">            <i><b>Samplette.io´</b></i></a>
+        <p>esse aqui é mais um script sei lá. é um site que faz o trabalho sujo pra você e facilita você encontrar samples no próprio <i>Youtube</i>. <b><i>isso é muito útil né?</i></b> além de ser completamente simples de usar. você pode <i>'gerar'</i> samples aleatórias baseadas em <i><b>gêneros musicais, bpm e outras coisas.</b></i></p>
+
+        <a href="//playphrase.me/" target="_blank">
+            <img src="/b-log/00w004p/img/playphrase.png" alt="Playphrase´">
+        </a>
+        <br>
+        <a class="topic" href="//playphrase.me/" target="_blank">            <i><b>Playphrase´</b></i></a>
+        <p>sitezinho bacana que faz quase a mesma coisa do <i>samplette</i> só que procurando falas de filmes. as famosas <i><b>spoken words</b></i>. basta você digitar qual frase ou palavra deseja e ele começa a passar uma grande quantidade de mídia que contém essas palavras. <i><b>meu deus, o futuro ele é assustador.</b></i><i>(esse site já é antigo)´</i></p>
+
+        <p class="supnote">acessando ele enquanto revisava esse guia´ eu descobri que ele tem um limite de <b><i>cinco footages</i></b> mostradas por cada frase que você pequisa. isso significa <b><i>que ele não é totalmente gratuito</i></b>. eu fiz até uns testes e descobri que mesmo usando uma aba anônima, ele ainda sempre vai mostrar as mesmas cinco pesquisas em ordem. ou seja não dá pra burlar. <b><i>isso ficará aqui ainda caso você ache que vale a pena apoiar o projeto</i></b> e então ganhar o acesso ilimitado. porém, eu descobri uma alternativa totalmente gratuita que aparentemente é até melhor: <a href="//yarn.co/" target="_blank"><i><b>yarn.co</b></i></a>.</p>
+
+        <a href="//fadr.com/stems" target="_blank">
+            <img src="/b-log/00w004p/img/fadr.png" alt="Fadr´">
+        </a>
+        <br>
+        <a class="topic" href="//fadr.com/stems" target="_blank">            <i><b>Fadr´</b></i></a>
+        <p>um site que usa tecnologias de <i><b>inteligência artificial</b></i> que existem <i>há anos</i> <b><i>(antes do chat-gpt btw)</i></b>, para separar os canais de áudio de uma gravação <i>(parecido com o processamento do <a href="//www.izotope.com/en/products/rx.html" target="_blank"><b>isotope rx´</b></a>)</i>. ele é muito util para você literalmente pegar as samples de músicas que você roubou e <b><i>separar os instrumentos específicos</i></b> delas para usar como quiser. ta aí de novo, o que eu disse sobre como <i><b>(obter esses sons de instrumentos reais sem saber tocá-los)</b></i>². </p>
+
+        <img src="/b-log/00w004p/img/div5.jpg" alt="Div 5´">
+        <hr>
+
+
+        <blockquote class="major">As técnicas:</blockquote>
+
+        <p>ok, você já tem um milhão de ferramentas sites e afins para começar a fazer algo, para gerar seus próprios sons e ideias, <b><i>mas como você faz música?</i></b> como você transforma tudo isso em música de fato. na prática?</p>
+        <p>aqui estará a parte das técnicas. ou mais ou menos isso.        </p> 
+
+        <p>Antes de tudo, você vai depender de algum software ou site específico para poder no mínimo <b><i>aplicar efeitos nos sons</i></b>. quando muito, <b><i>reorganizar os sons, recortar, mesclar</i></b> e todas essas coisas. E a minha maior recomendação segue sendo o: </p>
+        <blockquote class="minor">audacity´</blockquote>
+
+        <p>ele tem tudo isso que eu falei que é necessário, e de quebra uma grande quantidade de <i><b>efeitos experimentais</b></i> que são muito mais que quebra galho. aprender a usar ele pra mim seria talvez a <i><b>única coisa fundamental</b></i> que eu recomendaria nesse guia aqui. além de que, a longo prazo, ele tem a capacidade de <i><b>usar efeitos e ferramentas externas</b></i> que provavelmente você vai querer conhecer e ter contato. <i>(e eu falarei em outra oportunidade por aqui)</i>.</p>
+
+        <p>sério, eu não recomendaria mais nada além dele. mas como um dos propósitos disso é juntar informação e opções. aqui vão algumas menos populares, mas que podem ser úteis também.</p>
+
+        <a class="topic" href="//www.bandlab.com/" target="_blank">            <i><b>Bandlab / Soundtrap´</b></i></a>
+        <p>eu exitei muito em colocar esses sites na lista só porque na <b><i>prática eles são uma daw´</i></b> algo que eu  disse pra mim mesma no começo do guia, e que tentaria evitar mencionar esses softwares mais <i>'complexos'</i>. no entanto, esses dois aqui são tão simples que com <i><b>um tutorial no <a href="">Youtube´</a> de cinco minutos</b></i>, você aprende a manipular os audios nele e começar a fazer as coisas. é serio, eles estão longe de ser difíceis. <i><b>o básico que é só o que você precisa, rearranjar audios, recortar, colar etc, é algo super prático de aprender</b></i> e que a lógica é a mesma para todos. inclusive para o que eu recomendei antes dele aí.</p>
+
+        <a class="topic" href="//voicechanger.io/" target="_blank">            <i><b>VoiceChanger.io´</b></i></a>
+        <p>esse é um software intuitivamente bobo, mas que eu já usei incessantemente na <i><b>produção de álbuns sérios até</b></i>. ele vem basicamente com todos os efeitos necessários para se editar. tem vários presets e <i><b>lá no finalzinho você pode criar o seu efeito custom</b></i>, o que eu diria que é entrar no modo <a href="//voicechanger.io/voicemaker/#" target="_blank"><i>'avançado'</i></a> dele haha´. além de que ele é super intuitivo. você <b><i>carrega o audio, aplica os efeitos  em re-generate na output e baixa a saída de sinal modificada</i></b>. simples assim.</p>
+
+        <a class="topic" href="//audioalter.com/" target="_blank">            <i><b>AudioAlter´</b></i></a>
+        <p>esse é quase a mesma coisa do <i><b>voicechanger.io</b></i> tirando que ele tem efeitos mais <i>'profissionais'</i> digamos assim. não tem efeitos de distorção por exemplo, mas nada que você não consiga adaptar. <i><b>ex: se usar um equalizer e aumentar completamente algumas frequências, rolando os sliders para cima. você consegue distorcer as coisas (técnica entregue de graça aí)</b></i>. no fim, essas são coisas que você descobre <i>testando e experimentando</i> como eu venho dizendo mil vezes nesse guia né risos´</p>
+
+        <a class="topic" href="//www.thomann.co.uk/stompenberg_devices.html#" target="_blank">            <i><b>Stompemberg´</b></i></a>
+        <p>esse site parece zoeira, mas ele funciona de verdade. tem uma grande quantidade de <i><b> pedais de guitarras simulados</b></i>. você escolhe um e consegue manipular os knobs dos pedais na esquerda. e os efeitos se aplicam. dá pra upar áudio direto ou gravar o seu próprio com microfone. de qualquer maneira. usando <i><b>qualquer gravador de audio interno do pc você consegue pegar a saída de audio de volta</b></i>. por mais trabalhoso que seja.</p> <br>
+
+
+
+        <blockquote class="minor">mas então, como eu definitivamente começo? </blockquote>
+
+        <p>Agora, supondo que você já foi atrás dos sons, tentou criar e brincar com algumas das coisas que eu mencionei, coletou samples, fez sua pesquisa. Chegou a hora de aprender algumas coisas para <i><b>tornar isso o máximo original</b></i>. <br>
+
+        O que mais difere uma música experimental da outra, é a maneira como <b><i>você rearranja ela e faz a mixagem dela</i></b>. e isso <i><b>nós chamamos de produção</b></i>. Para isso você vai <i><b>precisar apenas das técnicas básicas de colagem de som</b></i>, já faladas mil vezes aqui <b><i>e efeitos</i></b>. os efeitos serão seus grandes amigos nessa jornada. e de maneira muito prática quase todos esses sites que eu mencionei ai, as daws´ mencionadas acima e claro o <b><i>audacity´</i></b>, eles têm todos os efeitos mais usados do mundo. que são efeitos de <i><b>reverberação, echo, delay, distorção e manipulações de tom e velocidade dos sons</b></i>. é aqui que eu diria que você <i>deve gastar a maior parte do seu tempo experimentando</i>, nos efeitos e na maneira como você rearranja eles e o seu som. só com isso você já consegue fazer coisas infinitas.</p>
+
+        <p>mas a partir daqui, o que você precisa ter em mente, é em como você quer que sua música soe ou se pareça. o que você vai precisar fazer de maneira específica ou usar de técnica vai depender do <i><b>gênero</b></i>, e <b><i>se é que você vai pensar no gênero</i></b>, da sua música. então, no máximo, será em <b><i>como você quer que ela soe</i></b>. e isso é literalmente infinito e subjetivo. não tem como apontar aqui todas as técnicas e maneiras de se fazer <i>(mas talvez eu aborde isso em algum guia mais específico)</i>, porque se não eu passaria a vida toda citando todas elas. mas o que eu recomendo <i> mesmo, mesmo</i>: o que mais pode te ajudar a construir as coisas no momento,  é <b><i>aprender e masterizar a técnica de colagem de som.</i></b> <br>
+        com ela você vai poder combinar e mesclar, e criar coisas novas a partir dos sons que você gera, e dos sons que você roubar por aí haha´. <i>seja cortando uma bateria de uma música que você gosta, ou um pedaço do vocal de outra que você odeia</i>, enchendo de efeito e criando uma coisa nova. no fim, isso é usado em milhões de gêneros musicais experimentais, mas o que vai determinar como ou com o quê seu som vai se parecer, é você. só a maneira que você vê e as ideias que você tem que serão capazes de determinar isso. e na prática, como eu cansei de me repetir. <b><i>você precisa experimentar</i></b>. experimentar de verdade. ou seja <i><b>gastar e dedicar tempo</b></i>. você vai ser como um alquimista, uma pessoa no laboratório, tentando encontrar alguma coisa de valor. não precisa ser a cura pra uma doença rara e nova que está causando uma pandemia de escala globalmente destrutiva. mas vai ser um remédio que as pessoas não sabiam que precisavam até que ele seja inventado e mude a qualidade de vida de milhares de pessoas. ok chega de analogias. o que eu quero dizer é que você tem todo o tempo do mundo. e assim como remédios, <i><b>têm suas fases de testes</b></i>, tem suas versões primitivas e depois as versões finais. você não precisa fazer o melhor remédio do mundo, nem a arte mais brutal do mundo. você pode só fazer alguma coisa que você goste e que com  certeza, mais alguém no mundo vai gostar também.</p>
+
+        <p>no fim <i><b>fazer arte</b></i> é sobre isso, não é e <i><b>jamais será sobre o resultado, mas sim sobre o processo</b></i>. eu quero que vocês enfiem isso na cabeça de vocês, para o resto da vida. <i><b>o que vai determinar o seu estilo, sua estética, suas técnicas e etc. é o seu processo</b></i>. e não o resultado. não adianta nada você fazer música igual ao Tim Hecker, igual aos caras mais brutais da noise music etc, porque essas pessoas já existem. Você <i><b>pode aprender as técnicas deles</b></i>, mas no fim o que vai determinar se sua música é sua mesmo, é a <b><i>maneira como você usa essas coisas</i></b>. que vai ser diferente de como eles usam e como todos os outros usam. tem que ser. é sobre <i>o quanto você se dedica na experimentação, na pesquisa e na lapidação das ideias</i> que você  tem. não é e nunca vai ser sobre a ferramenta. e essa é a razão pela qual eu estou citando aqui milhares delas, pra mostrar que de um jeito muito prático e simples você tem coisas infinitas e já pode começar fazendo as coisas e criando seu próprio material, mas <span class="uppercase">VOCÊ</span> vai precisar decidir como quer fazer isso. <i>esse já é o começo do seu processo</i>. toda obra começa na pesquisa. nunca se esqueça.</p>
+
+        <p>isso leva a gente ao começo do último ponto. com o passar do tempo, você vai cada vez mais sentir a necessidade de <i>masterizar seus processos</i> e se livrar da maior quantidade de ferramentas possíveis. <b><i>pra usar apenas uma</i></b> talvez. e ai você com mais independência vai descobrir suas favoritas e as que mais te servem, e vai desenvolver o seu processo do jeito que você achar melhor. mas de maneira prática, eu acho altamente recomendado que você tente encontrar um fluxo de trabalho onde você gaste cada vez menos tempo e dê menos voltas. quanto mais direta for a forma que você descobrir de criar as coisas, mais espaço você terá apenas para ter as ideias. <b><i>menos congestionamento significa mais espaço para que as coisas fluam na sua cabeça.</i></b> e seu tempo gasto será menor para gerar resultados.</p>
+
+        <blockquote class="minor">helena recomenda, final:</blockquote>
+
+        <p><a href="javascript:void(0)">se até esse momento você ainda se sentir sem rumo. a <b><i>minha recomendação final</i></b> é que você apenas baixe o <b><i>audacity</i></b> <i>(parece até propaganda né haha´ mas juro que não)</i>, <b><i>aprenda técnicas de colagem de som</i></b>, e busque</a> <a href="javascript:void(0)"><b><i>experimentar todos os efeitos que tem nele</i></b></a>. combinando isso com as samples que você vai roubar, ou os sons que você vai criar pelos sites que eu deixei, você já consegue fazer alguma coisa louca ai <i>(eu confio no seu potencial caubói)</i>. no começo pode ser bem difícil chegar no resultado que você imagina e é <i><b>por isso que eu diria também pra você não imaginar nada</b></i>, <i><b>apenas crie os sons</b></i> e <i>veja se isso te agrada ou não</i>. se não agradar, continue fazendo. uma hora vai. <i>com o passar do tempo, sua técnica vai ganhar cada vez mais forma, eu prometo</i>. foi assim comigo também e olha onde eu cheguei: </p>
+        
+        <div class="audios">
+            <fish-pp src="https://files.catbox.moe/7bcxmw.mp3" width="81%"></fish-pp>
+            <p><b><i>110 ｙｏｕ＇ll ⓞωᶰ ＬⓞǤ 』:</i></b> essa é do começo do ano. foi feita inteiramente usando o <i>audacity´</i> e apenas técnicas de <i><b>sound collage</b> das quais eu aprendi ao longo dos anos. juntando todo o material que eu mesma gravei de composição. e alguns spoken words de filmes manipulados e recortados frase a frase.</i></p>
+
+            <fish-pp src="https://files.catbox.moe/sr5zbl.mp3" width="81%"></fish-pp>
+            <p><b><i>ゴシック(30):</i></b> essa não usou nada do que eu apresentei aqui. foi feita basicamente usando sintetizadores modulares e <i>samplers granulares</i> mais complexos que eu já uso tem um tempo. mas ainda está aqui de exemplo para mostrar que o tempo e a dedicação em algo específico leva a resultados cada vez mais lapidados e aperfeiçoados. mesmo eu não gostando tanto dessa música</p>
+        </div>
+
+        <span class="supnote"><i>( durante o meu processo, desde muito jovem eu tive algumas ajudas e eu comi livros também né, mas as músicas que eu fazia no começo eram horríveis, ou melhor, estava muito longe de onde eu queria chegar. enfim, o que eu quero exemplificar é que, apesar dessas pequenas coisas especifícas (que contam muito aliás), no f im, eu ainda só consegui desenvolver uma forma 'minha' de fazer as coisas, porque eu insisti especificamente nisso: <b>gastar um certo tempo experimentando as coisas. testando e testando</b>)</i>.</span>
+
+        <p><i><b>aqui vão alguns tutoriais mais específicos de técnicas que serão muito úteis para vocês usando esse software (audacity´):</b></i></p>
+
+        <p>
+        <a class="auda" href="//youtu.be/iDpoU-5H_qU" target="_blank"><i><b>usar efeitos no audacity´</b></i></a> <br>
+        <a class="auda" href="//youtu.be/pYrDsa1EFn8" target="_blank"><i><b>como recortar audio´</b></i></a> <br>
+        <a class="auda" href="//youtu.be/vrLysVdBYdg" target="_blank"><i><b>split de faixas e inserção de novas faixas´</b></i></a> <br>
+        <a class="auda" href="//youtu.be/2gP6AELmD64" target="_blank"><i><b>criar novas faixas de áudio e usar multitracking´</b></i></a> <br>
+        <a class="auda" href="//youtu.be/NUawTnDgzpI" target="_blank"><i><b>mesclar faixas´</b></i></a> <br>
+        </p>
+        
+        <p>mas caso você não utilize ele, tudo o que você precisa então,<i> abstraindo</i>, é de <i><b>alguma coisa ai que tenha dois ou mais canais (tracks´)</b></i>, onde cada áudio seu vai para uma delas. é mais ou menos assim que funciona a música caso você ainda não tenha entendido. <b><i>vários audios tocando juntos harmonicamente ou não</i></b>. então você vai precisar organizar seus áudios e é assim que se faz. o <i><b>bandlab</b></i> e o <i><b>soundtrap</b></i> fazem isso também, e deve ter mais algum site/software ai na internet. depois de dominar pelo menos um pouco isso, você só precisa se divertir. sério, apenas se divirta e faça as coisas. quando você achar bom o suficiente, você lança. qualquer coisa se você achar ruim com o passar do tempo é só deletar né hahaha´ <i>ô vida facil fazer música né gente</i>.</p>
+
+        <p>eu pretendo em algum momento <i><b>fazer um novo guia</b></i>, falando mais sobre <i><b>técnicas específicas e avançadas</b></i> baseado em alguns <i><b>gêneros músicais experimentais</b></i>. como por exemplo, <i>noise music´</i> ou <i>ambient</i>. isso entra naquele assunto dos efeitos externos, os <b><i>famosos vst´</i></b>. que não são necessários e por isso eu não mencionei mais profundamente aqui, mas é mais e mais informação pra quem gosta de comer livro e blog. vou aproveitar e pra encerrar definitivamente deixar <i><b>alguns outros links e coisas uteis</b></i> que eu não tive tempo de falar mais especificamente também, comentando um pouco só. <i>abraços gente. obrigada por quem leu até aqui (coisa rara hoje em dia né haha´ to brincando).</i> <br> <br>
+        </p>
+        <hr>
+
+        <p>
+            <a class="auda" href="//youtu.be/IyhFJDkIIBI" target="_blank"><b><i>guia inicial da sound collage no audacity´</i></b></a> <br>
+            <i>tutorial mais direto mostrando na prática o uso de multifaixas. combinação de efeitos e gravação externa de audio direta.</i>
+        </p>
+
+        <p>
+            <a class="auda" href="//youtu.be/K1hgzQQPY8E" target="_blank"><i><b>simular efeito vsh/cassette no audacity´</b></i></a> <br>
+            <i>simulação do efeito de fita usando redução de bitrate, ou <b>qualidade do áudio´</b></i>
+        </p>
+
+        <p>
+            <a class="topic" href="//learningmusic.ableton.com/" target="_blank">
+                <i><b>o básico do básico da teoria musical voltada para a música de computador´</b></i></a> <br>
+            <i>site patrocinado pela ableton´ pra te ensinar o inicio da teorial usando a linguagem computacional. super prático de aprender</i>
+        </p>
+
+        <p>
+            <a class="topic" href="//everynoise.com/" target="_blank">
+                <i><b>rede neural dos gêneros musicais´</b></i></a> <br>
+            <i>site contendo uma espécie de arquivo para <b>"todos"</b> os gêneros musicais da terra. bom pra arrumar alguma inspiração, sei lá´</i>
+        </p>
+
+    </div>
+</body>
+</html>
