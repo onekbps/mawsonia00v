@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>mawsoniav ault</title>
     <style>
         @font-face {
-        font-family: 'DOS/V re. JPN24';
-        src: url(/assets/fonts/Web437_DOS-V_re_JPN24.woff) format('woff');
-        font-weight: normal;
-        font-style: normal;
+            font-family: 'DOS/V re. JPN24';
+            src: url(/assets/fonts/Web437_DOS-V_re_JPN24.woff) format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
 
         body {
@@ -26,7 +26,6 @@
         }
 
         .vault-text {
-            font-family: 'DOS/V re. JPN24', monospace;
             font-size: 12px;
             text-align: center;
             margin-top: 5px;
@@ -46,6 +45,20 @@
             max-width: 100%;
             height: auto;
         }
+
+        .typewriter {
+            display: inline-block;
+            border-right: 1px solid #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: blink 0.7s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
     </style>
 </head>
 <body>
@@ -53,9 +66,25 @@
     <img src="assets/img/1.gif" alt="Mawsonia Vault">
     <p class="vault-text">Restricted access. Data integrity check in progress.</p>
     <p class="vault-text">Primary sources secured. Anomaly detection enabled.</p>
-    <p class="vault-text">External retrieval: unauthorized.</p>
-    
+    <p class="vault-text"><span id="typing" class="typewriter"></span></p>
+
     <h1>mawsonia<span class="version">(v00)</span> vault</h1>
     <img src="assets/img/1.gif" alt="Mawsonia Vault">
+
+    <script>
+        const text = "External retrieval: unauthorized.";
+        const typingElement = document.getElementById("typing");
+        let i = 0;
+
+        function typeText() {
+            if (i < text.length) {
+                typingElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeText, 50);
+            }
+        }
+
+        window.addEventListener('load', typeText);
+    </script>
 </body>
 </html>

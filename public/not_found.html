@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>404´</title>
     <style>
         @font-face {
-        font-family: 'DOS/V re. JPN24';
-        src: url(/assets/fonts/Web437_DOS-V_re_JPN24.woff) format('woff');
-        font-weight: normal;
-        font-style: normal;
+            font-family: 'DOS/V re. JPN24';
+            src: url(/assets/fonts/Web437_DOS-V_re_JPN24.woff) format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
 
         body {
@@ -57,16 +57,47 @@
             margin-top: 0;
             max-width: 80%;
         }
+
+        .typewriter {
+            display: inline-block;
+            border-right: 1px solid #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: blink 0.7s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="assets/img/2.gif" alt="404 GIF">
-
         <h1>404</h1>
         <p class="subtitle">(not found´)</p>
         <p class="vault-text">Requested entry not located. Index corrupted or missing.</p>
-        <p class="vault-text">Access protocols ineffective. No restoration possible.</p>
+        <p class="vault-text"><span id="typing" class="typewriter"></span></p>
     </div>
+
+    <script>
+        const text = "Access protocols ineffective. No restoration possible.";
+        const typingElement = document.getElementById("typing");
+        let i = 0;
+
+        function typeText() {
+            if (i < text.length) {
+                typingElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeText, 45);
+            }
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(typeText, 1500);
+        });
+    </script>
 </body>
 </html>

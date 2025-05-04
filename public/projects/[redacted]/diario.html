@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>/00wlena/00d</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'MS Gothic';
+  background-color: #000000;
+  color: #C0C0C0;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  border: 3px double #C0C0C0;
+  margin: 10px;
+  height: calc(100vh - 20px);
+  box-sizing: border-box;
+}
+
+.window-header {
+  background-color: #404040;
+  padding: 4px 8px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.window-header-title {
+  font-size: 12px;
+  color: #C0C0C0;
+}
+
+.window-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.window-buttons div {
+  width: 8px;
+  height: 8px;
+  background-color: #C0C0C0;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.diary-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.diary-nav {
+  width: 80px;
+  background-color: #202020;
+  border-right: 2px solid #808080;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.nav-title {
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.diary-nav button {
+  background-color: #C0C0C0;
+  color: #000;
+  border: 2px outset #FFF;
+  padding: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-family: 'MS Gothic', sans-serif;
+  font-size: 12px;
+}
+
+.diary-nav button:hover {
+  background-color: #A0A0A0;
+}
+
+.diary-content {
+  flex-grow: 1;
+  background-color: #000000;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.diary-entry {
+  display: none;
+  border: 3px double #C0C0C0;
+  padding: 8px;
+  /* background-color: #000080; */
+  background-color: #4e4ea1;
+  color: #FFFFFF;
+}
+
+.diary-entry.active {
+  display: block;
+}
+
+.diary-entry h2 {
+  margin-top: 0;
+  color: white;
+  font-size: 14px;
+}
+
+/* .sigil {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width:1200px;
+  z-index: 1;
+  pointer-events: none;
+} */
+
+.sigilclear {
+  opacity: 0.6;
+  position: fixed;
+  top: 62%;
+  left: 2rem;
+  transform: translateY(-50%);
+  width: 850px;
+  z-index: 1;
+  pointer-events: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="window">
+  <div class="window-header">
+    <div class="window-header-title">/００ｗｌｅｎａ´</div>
+    <div class="window-buttons">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <div class="diary-container">
+    <nav class="diary-nav">
+      <div class="nav-title">– ̗̀ 2025 ̖́- </div>
+      <button data-entry="2025-05-03">03/05</button>
+      <button data-entry="2025-04-13">13/04</button>
+      <button data-entry="2025-01-01">01/01</button>
+    </nav>
+
+    <div class="diary-content">
+
+      <div id="2025-05-03" class="diary-entry active">
+        <h2><b>ｔｒêｓ　ｄｅ　ｍａｉｏ：</b>　ｃｈｕｖａ　ｅ　ｍａｉｓ　ｃｈｕｖａ</h2>
+
+        <p>depois de quatro dias initerruptos de chuva, hoje ela parou. o  clima ainda  continuou frio e ventoso.
+      a previsão para os próximos dias da semana é de mais e mais chuva. o sinal de internet e telefone aqui continua muito ruim.</p>
+
+      <p>é bem ruim ter que trabalhar diante desse clima nos próximos dias, mas fazer o quê. sigo sem fazer nenhuma música nova, nenhuma notícia boa e estou ainda sempre dormindo quando chego da cidade para casa. tenho fumado cigarros baratos que me lembram a casa da minha tia ou o meu pai, ligeiramente. pensado no clima do litoral, que apesar de esquisito e com sempre muito vento, ou me traz um conforto estranho, ou me traz ansiedade. às vezes eu sinto que alguma coisa entre as esquinas fala comigo, seja lá o que isso queira significar. amanhã já é domingo e o tempo está passando mais depressa do que eu gostaria. isso tudo é uma grande tristeza enevoada que me deixa capenga.
+      </p>
+
+      <p><em>sobre o site (betta fish´):</em> pretendo melhorar este diário. mas consegui fazer meu computador funcionar novamente de maneira provisória até estar tudo ok com a alimentação dele. isso me fez atualizar ligeiramente várias coisas na página <em>'peixe beta'</em> do projeto, que será a página principal do meu site por enquanto. <i><b>dia três de maio de dois mil e vinte e cinco. nada explodiu ainda</b></i>.</p>
+
+
+      </div>
+      
+      <div id="2025-04-13" class="diary-entry">
+        <h2><b>ｔｒｅｚｅ　ｄｅ　ａｂｒｉｌ:</b> 23:20</h2>
+
+        <p>eu nao consigo fazer musicas</p>
+        <p>eu nao consigo fazer musicas</p>
+
+        <p>eu nao consigo fazer canções</p>
+
+        <p>estou odiando minha voz mais que o normal<br>
+        quand o eu tento cantar</p>
+
+        <p>as melodais nao estao boas acho que nao sei cantar</p>
+
+        <p>bom estou quase aceitando</p>
+
+        <p>será que deve ser tao difícil assim ???</p>
+
+        <p>se esta sendo, talvez eu nao seja boa msm</p>
+
+        <p>provavelmente eu vou só continuar fazendo as musicas ambient de sempre e lalaláppp´</p>
+
+        <p>que tristeza</p>
+
+        <p>eu vejo amigos e amigas fazendo arte e isso de alguma forma me
+inspiram e me deixa com eu foria para fazer algo mas entao quando eu tento gravar
+tudo se torna um emaranhado de trabalhos e desânimos e essa frustração imensa cresce
+e e eu acabo desistindo </p>
+
+        <p>mas eu nao sinto que posso ai estar no mesmo lugar</p>
+
+        <p>eu ainda consigo compor e escrever letras e elas parecem boas o suficiente <br>
+          mas e sempre um parto para fazer isso ter algum sentido como uma canção. <br> 
+          onde eu guardarei isso entao, entao</p>
+
+        <p>será que um dia isso servirá a algum propósito</p>
+        <p>aaa que tristeza</p>
+
+      </div>
+
+      <div id="2025-01-01" class="diary-entry">
+        <h2><b>ｐｒｉｍｅｉｒｏ　ｄｅ　ｊａｎｅｉｒｏ:</b> ｉｎíｃｉｏ　ｄｅ　ｔｕｄｏ</h2>
+
+        <p>primeiro dia. sistema inicializado. nada explodiu ainda.</p>
+        <img src="/assets/img/cauboi.png" alt="fish">
+      </div>
+
+      <!-- <img src="/projects/[redacted]/sigil4.png" class="sigil"> -->
+      <img src="/projects/[redacted]/sigil3.png" class="sigilclear">
+    </div>
+  </div>
+</div>
+
+<script>
+// Navegação
+const buttons = document.querySelectorAll('.diary-nav button');
+const entries = document.querySelectorAll('.diary-entry');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    entries.forEach(entry => entry.classList.remove('active'));
+    const targetId = button.getAttribute('data-entry');
+    document.getElementById(targetId).classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>

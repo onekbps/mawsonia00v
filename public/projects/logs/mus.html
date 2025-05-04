@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>músic´</title>
+    <style>
+        :root {
+            --borda: #A9A9A9;
+            --borda-hover: #FFFFFF;
+            --fundo-caixa: #1F1F1F;
+            }
+
+        body {
+            background: black;
+            color: #ccc;
+            font-family: "MS Gothic";
+            margin: 0;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+
+        a {
+            color: #6cf;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        td.art {
+            padding: 0;
+            vertical-align: top;
+            padding-right: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 5px 0;
+        }
+
+        li.track {
+            font-size: 12px;
+            line-height: 1.4em;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #444;
+            margin: 5px 0;
+        }
+
+        h2.stream-links {
+            font-size: 11px;
+            margin: 5px 0;
+        }
+
+        pre.closer {
+            color: #555;
+            margin-top: 50px;
+            font-size: 11px;
+        }
+
+        .album-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.2rem;
+            margin: 1rem 0;
+        }
+
+        .album-grid img {
+            width: 100px;
+            height: 100px;
+            border: solid 2px var(--borda);
+            transition: border 0.2s;
+        }
+
+        .album-grid img:hover {
+            border: inset 2px var(--borda-hover);
+        }
+
+        .review {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            border: double 3px var(--borda);
+        }
+        .review {
+            padding: 0.5rem;
+            background: var(--fundo-caixa);
+        }
+
+        .review-info {
+            max-width: 500px;
+        }
+
+        .review-info h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .review-info p {
+            margin: 0.5rem 0 0 0;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <h3>□‛ /musica/</h3>
+        <p>pensamentos, ideias, abstrações, sinestesias sobre os discos que ouvi ao longo da vida e de alguma forma se tornaram especiais e parte da minha coleção que está listada abaixo.</p>
+        
+        <p>
+            nav —<br>
+            ├ <a href="#alltime">/alltime</a><br>
+            ├ <a href="#collection">/collection</a><br>
+            └ <a href="#review">/pensamento</a>
+        </p>
+    </div>
+
+    <section id="alltime">
+        <h3>□‛ /all time/</h3>
+        <div class="album-grid">
+            <img src="/projects/logs/mus/shelf/grouper-draggin.jpg" title="Grouper (Draggin a Dead Deer´)">
+            <img src="/projects/logs/mus/shelf/pretend-tapestry.jpg" title="Pretend (Tapestry'd Life´)">
+            <img src="/projects/logs/mus/shelf/cucina-hilja.jpg" title="Cucina Povera (Hilja´)">
+        </div>
+    </section>
+
+    <section id="collection">
+        <h3>□‛ /coleção/</h3>
+        <p>coleção de álbuns, eps´ etc que eu tenho. juntando todos os formatos de mídia física <em>(CD, Vinil´)</em> e digital. <br>
+            esses são alguns favoritos que me recordo´. futuramente pretendo organizar isso pelo formato.
+        </p>
+        <div class="album-grid">
+            <img src="/projects/logs/mus/shelf/burial-untr.jpg" title="Burial (Untrue´)">
+            <img src="/projects/logs/mus/shelf/chihei-afterimage.jpg" title="Chihei Hatakeyama (Afterimage´)">
+            <img src="/projects/logs/mus/shelf/laurel-dust.jpg" title="Laurel Halo (Dust´)">
+            <img src="/projects/logs/mus/shelf/hercegovina-unt.jpg" title="Hercegovina (Esprit de corps´)">
+
+            <img src="/projects/logs/mus/shelf/copeland-twin.jpg" title="Copeland (Ixora Twin´)">
+            <img src="/projects/logs/mus/shelf/grouper-shade.jpg" title="Grouper (Shade´)">
+            <img src="/projects/logs/mus/shelf/lambkin-vol2.jpg" title="Graham Lambkin (No Better No Worse (Vol.2)´)">
+            <img src="/projects/logs/mus/shelf/juliahol-havew.jpg" title="Julia Holter (Have You in My Wilderness´)">
+            <img src="/projects/logs/mus/shelf/elliott-roman.jpg" title="Elliott Smith (Roman Candle´)">
+            <img src="/projects/logs/mus/shelf/clairo-sling.jpg" title="Clairo (Sling´)">
+
+            <img src="/projects/logs/mus/shelf/ethel-pervs.jpg" title="Ethel Cain (Perverts´)">
+            <img src="/projects/logs/mus/shelf/hecker-mirages.jpg" title="Tim Hecker (Mirages´)">
+            <img src="/projects/logs/mus/shelf/subserviente-ruim.jpg" title="Subserviente (Ruim´)">
+            <img src="/projects/logs/mus/shelf/fiona-when.jpg" title="Fiona Apple (When the pawn´)">
+            <img src="/projects/logs/mus/shelf/olivia-guts.jpg" title="Olivia Rodrigo (GUTS´)">
+
+            <img src="/projects/logs/mus/shelf/boris-flood.jpg" title="Boris (Flood´)">
+            <img src="/projects/logs/mus/shelf/tristezafim.jpg" title="Tristeza Não Tem Fim (Tristeza Não Tem Fim´)">
+            <img src="/projects/logs/mus/shelf/starsof-refinement.jpg" title="Stars of the Lid (And Their Refinement´)">
+            <img src="/projects/logs/mus/shelf/arca-arca.jpg" title="Arca (Arca´)">
+            <img src="/projects/logs/mus/shelf/herlop-pripyat.jpg" title="Marina Herlop (Pripyat´)">
+        </div>
+    </section>
+
+    <section id="review">
+        <h3>□‛ /pensamentos´/</h3>
+        <p>(breve´).</p>
+
+        <!-- <div class="review">
+            <img src="imagens/album6.jpg" width="150">
+            <div class="review-info">
+                <h4>exemplo —</h4>
+                <p>
+
+                <b>Tipo:</b> Album, 2000<br>
+                <b>Gênero:</b> shoegaze<br>
+                <b>Idioma:</b> inglês<br>
+                <br>
+
+                Paisagens etéreas e guitarras lavadas de reverb.
+                </p>
+            </div>
+        </div> -->
+
+    </section>
+
+</body>
+</html>
